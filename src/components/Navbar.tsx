@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { FileImage, FileText, Image, File, ChevronDown, Home, Info, HelpCircle } from 'lucide-react';
+import Link from 'next/link';
 
 export default function ConverterNavbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -31,25 +32,25 @@ export default function ConverterNavbar() {
           
           {/* Logo */}
           <div className="flex items-center">
-            <a href="/" className="flex items-center space-x-3">
+            <Link href="/" className="flex items-center space-x-3">
               <div className="bg-gray-900 p-2 rounded-lg">
                 <File className="w-5 h-5 text-white" />
               </div>
               <span className="text-xl font-medium text-gray-900">FileConverter</span>
-            </a>
+            </Link>
           </div>
 
           {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
             
             {/* Home Link */}
-            <a 
+            <Link 
               href="/" 
               className="flex items-center space-x-2 text-gray-600 hover:text-gray-900 transition-colors"
             >
               <Home className="w-4 h-4" />
               <span className="font-medium">Home</span>
-            </a>
+            </Link>
 
             {/* Converters Dropdown */}
             <div className="relative">
