@@ -1,6 +1,5 @@
 import React from 'react';
 import { FileImage, FileText, Image, File, ArrowRight } from 'lucide-react';
-import Navbar from "@/components/Navbar"
 
 export default function FileConverterHomepage() {
   const converterOptions = [
@@ -32,7 +31,6 @@ export default function FileConverterHomepage() {
       backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f3f4f6' fill-opacity='0.4'%3E%3Cpath d='M0 0h40v40H0V0z'/%3E%3C/g%3E%3Cg fill='%23e5e7eb' fill-opacity='0.3'%3E%3Cpath d='M0 20h40v1H0v-1zm20-20v40h1V0h-1z'/%3E%3C/g%3E%3C/svg%3E")`,
       backgroundSize: '40px 40px'
     }}>
-      <Navbar />
 
       {/* Main Content */}
       <main className="max-w-4xl mx-auto px-6 py-16">

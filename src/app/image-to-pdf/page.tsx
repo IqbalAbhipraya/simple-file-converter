@@ -1,6 +1,5 @@
 'use client';
 
-import Navbar from "@/components/Navbar"
 import { convertToPdf  } from "@/components/image-to-pdf";
 
 export default function PngToPdf() {
@@ -10,7 +9,6 @@ export default function PngToPdf() {
             style={{
                 backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f3f4f6' fill-opacity='0.4'%3E%3Cpath d='M0 0h40v40H0V0z'/%3E%3C/g%3E%3Cg fill='%23e5e7eb' fill-opacity='0.3'%3E%3Cpath d='M0 20h40v1H0v-1zm20-20v40h1V0h-1z'/%3E%3C/g%3E%3C/svg%3E")`,
                 backgroundSize: '40px 40px'}}>
-            <Navbar />
 
             <div className="flex justify-center items-center min-h-screen flex-col gap-6 p-4 ">
                 <h1 className="text-4xl font-bold text-gray-900 mb-4">
